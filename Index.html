@@ -1,0 +1,76 @@
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justin Bieber - Oficial</title>
+    <script>
+        function mostrarMensagem(event) {
+            // Evita que o formulário seja enviado
+            event.preventDefault();
+
+            // Exibe a mensagem de sucesso
+            alert("Sua mensagem foi enviada com sucesso!");
+
+            // Limpa os campos do formulário
+            document.getElementById("formulario").reset();
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo ao Mundo de Justin Bieber</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="pagina1.html">Biografia</a></li>
+                <li><a href="pagina2.html">Carreira</a></li>
+                <li><a href="pagina3.html">Discografia</a></li>
+                <li><a href="pagina4.html">Fotos</a></li>
+                <li><a href="pagina5.html">Fãs e Curiosidades</a></li>
+                <li><a href="pagina6.html">Eventos e Turnês</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Sobre Justin Bieber</h2>
+        <p>Justin Bieber é um cantor, compositor e ícone da música pop mundial. Com uma carreira que começou aos 13 anos, Justin conquistou o mundo com sua voz marcante e seus hits inesquecíveis.</p>
+        <p>Desde o seu lançamento inicial em 2009, ele não parou de crescer e expandir sua base de fãs, que é conhecida como "Beliebers" (euuuuu). Com muitos sucessos, turnês e prêmios ao longo dos anos, ele se consolidou como um dos maiores artistas da sua geração.</p>
+        <p>A carreira de Justin Bieber é marcada por grandes álbuns como "My World", "Believe" (minha favvv) e "Purpose". Além disso, ele sempre trouxe músicas inovadoras e emocionantes que marcaram várias gerações.</p>
+        <p>Desde seu primeiro álbum, Justin Bieber já lançou uma série de discos de sucesso que dominaram as paradas musicais. Abaixo, você pode conferir algumas das principais músicas de sua discografia:</p>
+        <ul>
+            <li><a href="https://www.youtube.com/watch?v=kffacxfA7G4" target="_blank">"Baby" - Justin Bieber</a></li>
+            <li><a href="https://www.youtube.com/watch?v=fRh_vgS2dFE" target="_blank">"Sorry" - Justin Bieber</a></li>
+            <li><a href="https://www.youtube.com/watch?v=oyEuk8j8imI" target="_blank">"Love Yourself" - Justin Bieber</a></li>
+        </ul>
+
+        <!-- Formulário com JavaScript -->
+        <section>
+            <h2>Fale Conosco</h2>
+            <p>Quer mandar uma mensagem ou dizer que é Belieber? Preencha o formulário abaixo e entre na vibe!</p>
+            <form id="formulario" onsubmit="mostrarMensagem(event)">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required><br><br>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="mensagem">Mensagem:</label><br>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea><br><br>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </section>
+
+    <footer>
+        <p style="font-size: 0.7em; color: black; text-align: center;">
+            Feito com amor, pela maior fã do Justin Bieber!!!
+        </p>
+    </footer>
+</body>
+</html>
+
